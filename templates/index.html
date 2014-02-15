@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Skeleton Page </title>
-        <script src="/scripts/compiled/bundle.js"> </script>
-    </head>
-    <body>
-        <p> Here is a page. </p>
-    </body>
-</html>
+{% extends 'layout.html' %}
+{% block content %}
+    <video id="vid1" src="" class="video-js vjs-default-skin" controls
+                   preload="auto" autoplay="autoplay" loop="loop" width="640" height="360"
+                              data-setup='{ "techOrder": ["youtube"], "src": "http://www.youtube.com/watch?v=xjS6SftYQaQ" }'>
+    </video>
+{% endblock %}
