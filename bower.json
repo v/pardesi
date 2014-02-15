@@ -1,0 +1,16 @@
+{
+  "name": "pardesi",
+  "version": "1.0.0",
+  "authors": [
+    "Vaibhav Verma <vaibhav2614@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
