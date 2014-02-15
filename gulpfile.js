@@ -46,8 +46,11 @@ gulp.task('vendor_css', function() {
         .pipe(gulp.dest(compile_path))
 });
 
+gulp.task('default', ['app_scripts', 'vendor_scripts', 'vendor_css']);
+
 gulp.task('watch', function() {
-    gulp.watch('scripts/**/*.js', ['default']);
+    gulp.watch(['assets/scripts/src/**/*.js'], ['app_scripts']);
+    gulp.watch(paths.vendor_scripts, ['vendor_scripts']);
+    gulp.watch(paths.vendor_css, ['vendor_css']);
 });
 
-gulp.task('default', ['app_scripts', 'vendor_scripts', 'vendor_css']);
