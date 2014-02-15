@@ -12,3 +12,8 @@ gulp.task('default', function() {
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest('scripts/compiled'))
 });
+
+
+gulp.task('watch', function() {
+    gulp.watch('scripts/**/*.js', ['default']);
+});
